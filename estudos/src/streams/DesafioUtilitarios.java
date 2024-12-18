@@ -6,11 +6,9 @@ import java.util.function.UnaryOperator;
 public class DesafioUtilitarios {
 
 	StringBuilder inverso;
-	
-	
-	public final static Function<Integer, String> binarizando = exemplo -> Integer.toBinaryString(exemplo);
-	public final static UnaryOperator<StringBuilder> invertendo = exemplo -> exemplo.reverse();
-	public final static Function<String, Integer> retornandoTipo = exemplo -> Integer.parseInt(exemplo); 
+
+	public final static UnaryOperator<String> invertendo = exemplo -> new StringBuilder(exemplo).reverse().toString();
+	public final static Function<String, Integer> retornandoTipo = exemplo -> Integer.parseInt(exemplo, 2);
 	
 			
 			

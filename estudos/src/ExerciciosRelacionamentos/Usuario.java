@@ -21,7 +21,7 @@ public class Usuario {
 	}
 	
 	// #1 Comprar o celular se ele tiver saldo suficiente;
-	boolean comprarCelular(Celular celular) {
+	String comprarCelular(Celular celular) {
 		if(saldo >= celular.preco) {
 			Scanner entrada = new Scanner(System.in);
 			System.out.println("\nDeseja ativar o chip? (sim/não)");

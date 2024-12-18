@@ -11,7 +11,7 @@ public class DesafioMap {
 		Consumer<Integer> print = System.out::println;
 		
 		List<Integer> nums = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
-			nums.stream().map(DesafioUtilitarios.binarizando)
+			nums.stream().map(Integer::toBinaryString)
 			.map(DesafioUtilitarios.invertendo)
 			.map(DesafioUtilitarios.retornandoTipo)
 			.forEach(System.out::println);
